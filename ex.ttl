@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://erlangen-crm.org/current/P14i_performed> a owl:ObjectProperty ;
+    rdfs:label "P14 performed"@en ;
+    rdfs:range <http://erlangen-crm.org/current/E7_Activity> ;
+    rdfs:subPropertyOf <http://erlangen-crm.org/current/P11i_participated_in> ;
+    owl:inverseOf <http://erlangen-crm.org/current/P14_carried_out_by> ;
+    skos:notation "P14i"^^xsd:string .
+
