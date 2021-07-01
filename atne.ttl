@@ -1,0 +1,7 @@
+@prefix ex: <http://www.purl.org/hercules/asio/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:HumanResource a owl:Class .
+
+ex:authors a owl:ObjectProperty .
+
