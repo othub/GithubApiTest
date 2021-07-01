@@ -1,0 +1,13 @@
+@prefix ex: <http://www.purl.org/hercules/asio/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:HumanResource a owl:Class,
+        owl:InverseFunctionalProperty ;
+    rdfs:label "HumanResource"@en ;
+    rdfs:comment "hihi"@en ;
+    rdfs:domain skos:Concept .
+
+ex:authors a owl:ObjectProperty .
+
