@@ -1,0 +1,23 @@
+@prefix ex: <http://www.purl.org/hercules/asio/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:HumanResource a owl:Class,
+        owl:InverseFunctionalProperty ;
+    rdfs:label "HumanResource"@en ;
+    rdfs:comment "hihi"@en ;
+    rdfs:domain skos:Concept .
+
+owl:Example a owl:Class ;
+    rdfs:label "Example"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality "2018-12-19"^^xsd:datetime,
+                1,
+                2e+00,
+                "maximum of cardinality"^^xsd:string,
+                "13:15:00"^^xsd:time ;
+            owl:onProperty owl:members ],
+        owl:Thing .
+
